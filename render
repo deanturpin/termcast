@@ -11,13 +11,13 @@ fi
 
 # Clear screen and start capture
 clear
-ffmpeg -y -f x11grab -video_size $resolution -i :0.0 -filter:v scale=800:-1 -r 10 keys.gif >& /dev/null &
+ffmpeg -y -f x11grab -video_size $resolution -i :0.0 -filter:v scale=800:-1 -r 8 keys.gif >& /dev/null &
 
 # Store process ID so we can kill it later
 pid=$!
 
 # Start keystroke playback
-scriptreplay -d 2 keys.timing keys
+scriptreplay -d 1.5 keys.timing keys
 
 # Stop screen capture
 kill $pid
