@@ -9,4 +9,5 @@ clear
 # Capture
 script --quiet -t keys --timing=keys.timing
 
+clear
 echo Capture complete

@@ -22,4 +22,5 @@ scriptreplay -d 1.5 keys.timing keys
 # Stop screen capture
 kill $pid
 
+clear
 echo Render complete
