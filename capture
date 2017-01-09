@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo Starting key capture
+echo "^D to terminate caputre"
+
+sleep 1
+clear
+
+# Capture
+script --quiet -t keys --timing=keys.timing
+
+echo Capture complete

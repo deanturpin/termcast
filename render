@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Default screen resolution
+resolution='1600x900'
+
+# Attempt to detect the resolution
+if [[ $(xdpyinfo | grep dimensions) =~ ([[:digit:]]+x[[:digit:]]+) ]]; then
+
+	resolution=${BASH_REMATCH[1]}
+fi
+
+# Clear screen and start capture
+clear
+ffmpeg -y -f x11grab -video_size $resolution -i :0.0 -filter:v scale=800:-1 -r 5 keys.gif >& /dev/null &
+
+# Store process ID so we can kill it later
+pid=$!
+
+# Start keystroke playback
+scriptreplay keys.timing keys
+
+# Stop screen capture
+kill $pid
+
+echo Render complete
