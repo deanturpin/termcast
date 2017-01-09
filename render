@@ -23,4 +23,4 @@ scriptreplay -d 1.5 keys.timing keys
 kill $pid
 
 clear
-echo Render complete
+echo Screencast - render complete
