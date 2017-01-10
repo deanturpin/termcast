@@ -23,3 +23,8 @@ rendering the display to an animated GIF.
 - View in a browser ```firefox keys.gif```
 
 ![](https://raw.githubusercontent.com/deanturpin/feedback/master/examples/echo/keys.gif)
+
+## Installation
+```bash
+sudo cp termcast* /usr/sbin/
+```
