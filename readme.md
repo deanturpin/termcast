@@ -1,7 +1,8 @@
-# Screencast
+# termcast
 Based on an article by [hisdeedsaredust](https://github.com/hisdeedsaredust).
 
-Screencast captures terminal keystrokes to a file and then replays them while rendering the display to an animated GIF.
+**termcast** captures terminal keystrokes to a file and replays them while
+rendering the display to an animated GIF.
 
 - Open terminal
 - Make full screen (F11)
@@ -10,13 +11,13 @@ Screencast captures terminal keystrokes to a file and then replays them while re
 
 ```bash
 # Capture keystrokes
-./capture
+./termcast-capture
 
 # TYPE SOME STUFF
 # Followed by ^D
 
 # Render animated GIF
-./render
+./termcast-render
 ```
 
 - View in a browser ```firefox keys.gif```
