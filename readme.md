@@ -26,5 +26,5 @@ rendering the display to an animated GIF.
 
 ## Installation
 ```bash
-sudo cp termcast* /usr/sbin/
+sudo cp termcast* /usr/bin/
 ```
