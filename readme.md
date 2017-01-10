@@ -28,3 +28,8 @@ rendering the display to an animated GIF.
 ```bash
 sudo cp termcast* /usr/bin/
 ```
+
+## Dry run without rendering to GIF
+```bash
+./termcast-play
+```

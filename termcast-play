@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Start keystroke playback
+clear
+scriptreplay -d 1.5 keys.timing keys
+
+clear
+echo $0 complete
